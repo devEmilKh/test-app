@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-* {
+.darkTheme {
   margin: 0;
   padding: 0;
   outline: none;
@@ -14,8 +14,22 @@
   font-family: 'Roboto', sans-serif;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
-
 }
+
+.lightTheme {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  position: relative;
+  width: 1366px;
+  height: 1267px;
+  background: #FFFFFF;
+
+  font-family: 'Roboto', sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -27,4 +41,12 @@ code {
   height: 64px;
   left: 123px;
   top: 35px;
+}
+
+.vector {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 1223px;
+  top: 57px;
 }
