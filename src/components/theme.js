@@ -9,10 +9,6 @@ export const lightTheme = {
   body: "#ffffff",
 }
 
-export const Vector = {
-    
-}
-
 export const GlobalStyles = createGlobalStyle`
  body {
   background: ${props => props.theme.body};

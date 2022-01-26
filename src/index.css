@@ -1,40 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-.darkTheme {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  position: absolute;
-  width: 1366px;
-  height: 1267px;
-  left: 0px;
-  top: 0px;
-  background: #000000;
-
-  font-family: 'Roboto', sans-serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-
-.lightTheme {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  position: relative;
-  width: 1366px;
-  height: 1267px;
-  background: #FFFFFF;
-
-  font-family: 'Roboto', sans-serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 .logo {
   position: absolute;
   width: 64px;
@@ -42,7 +11,6 @@ code {
   left: 123px;
   top: 35px;
 }
-
 .vector {
   position: absolute;
   width: 20px;
@@ -50,3 +18,33 @@ code {
   left: 1223px;
   top: 57px;
 }
+html,
+body {
+  height: 100%;
+}
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+  min-width: 100vw;
+}
+#root {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	position: absolute;
+	width: 1366px;
+	height: 1267px;
+	left: 0px;
+	top: 0px;
+  
+	font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
