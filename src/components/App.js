@@ -18,8 +18,11 @@ return (
       <GlobalStyles />
         <div className="App">
           <img className="logo" src={ logo } alt="logo"/>
-          <button onClick={switchTheme}>button</button>
-          <img className="vector" onClick={ switchTheme } src={ vectorFD } alt="vector"/>
+          <button className="vector" onClick={switchTheme} />
+          <img className="vector" onClick={ switchTheme } src={ vectorFD } alt="vector" />
+        </div>
+        <div>
+          <h2>test</h2>
         </div>
     </ThemeProvider>
   );
