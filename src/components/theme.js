@@ -1,16 +1,15 @@
 import {createGlobalStyle} from "styled-components"
-import '../index.css';
 
 export const darkTheme = {
   body: "#000",
   textColor: "#fff",
-  headingColor: "lightblue"
+  pictureColor: ("../assets/VectorFD.png")
 }
 
 export const lightTheme = {
   body: "#FFF",
   textColor: "#000",
-  headingColor: "#d23669"
+  pictureColor: "../assets/VectorFL.png"
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -20,6 +19,6 @@ export const GlobalStyles = createGlobalStyle`
   transition: .3s ease;
  }
  div{
-   color: ${props => props.theme.headingColor};
+   color: ${props => props.theme.pictureColor};
  }
 `

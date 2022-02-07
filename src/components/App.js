@@ -3,8 +3,6 @@ import '../index.css';
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme, GlobalStyles} from "./theme";
 import logo from '../assets/Frame227.png'
-import vectorFL from '../assets/VectorFL.png'
-import vectorFD from '../assets/VectorFD.png'
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -18,8 +16,7 @@ return (
       <GlobalStyles />
         <div className="App">
           <img className="logo" src={ logo } alt="logo"/>
-          <button className="vector" onClick={switchTheme} />
-          <img className="vector" onClick={ switchTheme } src={ vectorFD } alt="vector" />
+          <button className="button" onClick={switchTheme} />
         </div>
         <div>
           <h2>test</h2>
