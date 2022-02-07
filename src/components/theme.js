@@ -5,13 +5,13 @@ import VectorFL from '../assets/VectorFL.png';
 export const darkTheme = {
   body: "#000",
   textColor: "#fff",
-  src: VectorFD
+  img: VectorFD
 }
 
 export const lightTheme = {
   body: "#FFF",
   textColor: "#000",
-  src: VectorFL
+  img: VectorFL
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -21,6 +21,6 @@ export const GlobalStyles = createGlobalStyle`
   transition: .3s ease;
  }
  img{
-   color: ${props => props.theme.src};
+   color: ${props => props.theme.img};
  }
 `
