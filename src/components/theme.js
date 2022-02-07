@@ -1,15 +1,17 @@
 import {createGlobalStyle} from "styled-components"
+import VectorFD from '../assets/VectorFD.png';
+import VectorFL from '../assets/VectorFL.png';
 
 export const darkTheme = {
   body: "#000",
   textColor: "#fff",
-  pictureColor: ("../assets/VectorFD.png")
+  src: VectorFD
 }
 
 export const lightTheme = {
   body: "#FFF",
   textColor: "#000",
-  pictureColor: "../assets/VectorFL.png"
+  src: VectorFL
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -18,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
   color: ${props => props.theme.textColor};
   transition: .3s ease;
  }
- div{
-   color: ${props => props.theme.pictureColor};
+ img{
+   color: ${props => props.theme.src};
  }
 `
