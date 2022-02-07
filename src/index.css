@@ -18,10 +18,12 @@ code {
   left: 1223px;
   top: 57px;
 }
+
 html,
 body {
   height: 100%;
 }
+
 body {
   display: -ms-flexbox;
   display: flex;
@@ -32,6 +34,7 @@ body {
   background-color: #f5f5f5;
   min-width: 100vw;
 }
+
 #root {
 	width: 100%;
 	text-align: center;

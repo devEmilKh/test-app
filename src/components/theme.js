@@ -18,9 +18,6 @@ export const GlobalStyles = createGlobalStyle`
  body {
   background: ${props => props.theme.body};
   color: ${props => props.theme.textColor};
-  transition: .3s ease;
- }
- img{
-   color: ${props => props.theme.img};
+  transition: .9s ease;
  }
 `
