@@ -28,7 +28,6 @@ return (
       <GlobalStyles />
         <div className="App">
           <img className="logo" src={ logo } alt="logo"/>
-          <button className="vector" onClick={switchTheme}>changeTheme</button>
           <img className="button" onClick={ switchTheme } src= {logo} alt="button" />
         </div>
         <div>
