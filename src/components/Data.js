@@ -16,7 +16,7 @@ function Data() {
   
    useEffect(() => {
       setAppState({loading: true})
-      const apiUrl = 'http://https://test-front.framework.team/paintings';
+      const apiUrl = 'https://test-front.framework.team/paintings';
       axios.get(apiUrl).then((resp) => {
         const allPersons = resp.data;
         setAppState({

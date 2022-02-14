@@ -20,7 +20,11 @@ return (
             <img className="button" onClick={ switchTheme } src= {logo} alt="button" />
           </div>
           <div className="app">
-            <h2>test</h2>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
               <Data />
           </div>
     </ThemeProvider>
