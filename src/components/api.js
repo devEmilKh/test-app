@@ -11,13 +11,13 @@ export default class api extends Component {
     }
 
     componentDidMount() {
-        fetch("https://test-front.framework.team/paintings")
+        fetch("https://test-front.framework.team")
         .then(res => res.json())
         .then(
             (result) => {
                 this.setState({
                     isLoaded: true,
-                    items: result.authorId
+                    items: result.paintings
                 });
             },
             (error) => {
@@ -40,8 +40,8 @@ export default class api extends Component {
                 <ul>
                     {items.map(item => (
                         <li key={item.name}>
-                            {item.created}
-                            <img src={item.imageUrl} />
+                            {item.paintings}
+                            
                         </li>
                     ))}
                 </ul>

@@ -3,7 +3,6 @@ import '../index.css';
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme, GlobalStyles} from "./theme";
 import logo from '../assets/Frame227.png'
-import api from './api';
 
 
 function App() {
@@ -23,9 +22,6 @@ return (
         </div>
         <div>
           <h2>test</h2>
-        </div>
-        <div>
-            {api}
         </div>
     </ThemeProvider>
   );
