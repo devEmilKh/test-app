@@ -26,7 +26,7 @@ function UserData(props) {
                                 <td>{picture.created}</td>
                                 <td>{picture.id}</td>
                                 <td>
-                                    <img src = {baseUrl}{picture.imageUrl}/>
+                                    <img src = {baseUrl}??????{picture.imageUrl}/>
                                 </td>
                                 <td>{picture.locationId}</td>
                                 <td>{picture.name}</td>
