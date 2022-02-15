@@ -1,6 +1,7 @@
 function UserData(props) {
 
     const { gallery } = props
+    const baseUrl = 'https://test-front.framework.team';
 
     if (!gallery || gallery.length === 0) return <p>Нет данных</p>
 
@@ -24,7 +25,9 @@ function UserData(props) {
                                 <td>{picture.authorId}</td>
                                 <td>{picture.created}</td>
                                 <td>{picture.id}</td>
-                                <td>{picture.imageUrl}</td>
+                                <td>
+                                    <img src = {baseUrl}{picture.imageUrl}/>
+                                </td>
                                 <td>{picture.locationId}</td>
                                 <td>{picture.name}</td>
                             </tr>
