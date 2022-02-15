@@ -1,5 +1,5 @@
-function LoadingPersonsData(Component) {
-    return function LoadingPersonsData({ isLoading, ...props }) {
+function LoadingGalleryData(Component) {
+    return function LoadingGalleryData({ isLoading, ...props }) {
         if (!isLoading) return <Component {...props} />
 
         else return (
@@ -10,4 +10,4 @@ function LoadingPersonsData(Component) {
     }
 }
 
-export default LoadingPersonsData
+export default LoadingGalleryData

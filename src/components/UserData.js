@@ -1,8 +1,8 @@
 function UserData(props) {
 
-    const { persons } = props
+    const { gallery } = props
 
-    if (!persons || persons.length === 0) return <p>Нет данных</p>
+    if (!gallery || gallery.length === 0) return <p>Нет данных</p>
 
     return (
         <div>
@@ -19,14 +19,14 @@ function UserData(props) {
                 </thead>
                 <tbody>
                     {
-                        persons.map((person) =>
-                            <tr key={person.id}>
-                                <td>{person.authorId}</td>
-                                <td>{person.created}</td>
-                                <td>{person.id}</td>
-                                <td>{person.imageUrl}</td>
-                                <td>{person.locationId}</td>
-                                <td>{person.name}</td>
+                        gallery.map((picture) =>
+                            <tr key={picture.id}>
+                                <td>{picture.authorId}</td>
+                                <td>{picture.created}</td>
+                                <td>{picture.id}</td>
+                                <td>{picture.imageUrl}</td>
+                                <td>{picture.locationId}</td>
+                                <td>{picture.name}</td>
                             </tr>
                         )
                     }
