@@ -12,7 +12,7 @@ function UserData(props) {
                         gallery.map((picture) =>
                             <tr key={picture.id}>
                                 <td>
-                                    <img width="360px" height="245px" src = {baseUrl + picture.imageUrl} />
+                                    <img width="360px" height="275px" src = {baseUrl + picture.imageUrl} />
                                 </td>
                             </tr>
                         )
