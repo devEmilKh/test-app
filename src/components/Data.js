@@ -28,7 +28,7 @@ function Data() {
   
   
     return (
-      <div className="app">
+      <div className="App">
           <DataLoading isLoading={appState.loading} gallery={appState.gallery} />
       </div>
     );

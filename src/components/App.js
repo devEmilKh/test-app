@@ -15,16 +15,11 @@ function App() {
 return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
-          <div className="App">
+          <div className="Frame">
             <img className="logo" src={ logo } alt="logo"/>
             <img className="button" onClick={ switchTheme } src= {logo} alt="button" />
           </div>
           <div className="App">
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
               <Data />
           </div>
     </ThemeProvider>
