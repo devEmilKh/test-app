@@ -11,11 +11,12 @@ function UserData(props) {
             <div className="item">
                     {
                         gallery.map((picture) =>
-                            <tr key={picture.id}>
-                                <td>
+                            <div key={picture.id}>
+                                
                                     <img width="360px" height="275px" src = {baseUrl + picture.imageUrl} />
-                                </td>
-                            </tr>
+                                    <li>{picture.name}</li>
+                                
+                            </div>
                         )
                     }
             </div>    
