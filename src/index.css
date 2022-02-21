@@ -19,29 +19,13 @@ code {
   top: 57px;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 #root {
-	width: 100%;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	outline: none;
-	position: absolute;
-	width: 1366px;
-	height: 1267px;
-	left: 0px;
-	top: 0px;
-  
 	font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   }
 
-  .App {
+  .item {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

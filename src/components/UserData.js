@@ -6,7 +6,7 @@ function UserData(props) {
     if (!gallery || gallery.length === 0) return <p>Нет данных</p>
 
     return (
-        <div className="App">
+        <div className="item">
 
                     {
                         gallery.map((picture) =>

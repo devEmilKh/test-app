@@ -19,7 +19,7 @@ return (
             <img className="logo" src={ logo } alt="logo"/>
             <img className="button" onClick={ switchTheme } src= {logo} alt="button" />
           </div>
-          <div className="App">
+          <div>
               <Data />
           </div>
     </ThemeProvider>
