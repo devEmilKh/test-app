@@ -18,16 +18,24 @@ code {
   left: 1223px;
   top: 57px;
 }
-
 #root {
 	font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   }
-
-  .item {
+body {
+    margin-top: 3rem;
+  }
+.l-wrap {
+    margin-right: auto;
+    margin-left: auto;
+  }
+.item {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 224px;
+    margin-right: 123px;
+    margin-left: 123px;
   }

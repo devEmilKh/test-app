@@ -6,8 +6,9 @@ function UserData(props) {
     if (!gallery || gallery.length === 0) return <p>Нет данных</p>
 
     return (
-        <div className="item">
-
+    <div class="l-wrap">
+            <div class="three-col-grid">
+                <div className="item">
                     {
                         gallery.map((picture) =>
                             <tr key={picture.id}>
@@ -17,6 +18,8 @@ function UserData(props) {
                             </tr>
                         )
                     }
+                </div>    
+            </div>
       </div>
     )
 }
