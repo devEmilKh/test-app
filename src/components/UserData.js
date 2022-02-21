@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 function UserData(props) {
 
     const { gallery } = props
@@ -7,8 +8,7 @@ function UserData(props) {
 
     return (
     <div class="l-wrap">
-            <div class="three-col-grid">
-                <div className="item">
+            <div className="item">
                     {
                         gallery.map((picture) =>
                             <tr key={picture.id}>
@@ -18,8 +18,7 @@ function UserData(props) {
                             </tr>
                         )
                     }
-                </div>    
-            </div>
+            </div>    
       </div>
     )
 }
