@@ -7,7 +7,6 @@ function UserData(props) {
     if (!gallery || gallery.length === 0) return <p>Нет данных</p>
 
     return (
-    <div class="l-wrap">
             <div className="item">
                     {
                         gallery.map((picture) =>
@@ -20,7 +19,6 @@ function UserData(props) {
                         )
                     }
             </div>    
-      </div>
     )
 }
 
