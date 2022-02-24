@@ -23,7 +23,7 @@ return (
       <GlobalStyles />
           <div className="Frame">
             <img className="logo" src={ logo } alt="logo"/>
-            <img className="button" onClick={ switchTheme } src= {changeButton} alt="button" />
+            <img className="button" onClick = { switchTheme } src = {changeButton} alt="button" />
           </div>
           <div>
               <Data />

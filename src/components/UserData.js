@@ -13,7 +13,7 @@ function UserData(props) {
                             <div key={picture.id}>
                                 
                                     <img width="360px" height="275px" src = {baseUrl + picture.imageUrl} />
-                                    <li>{picture.name}</li>
+                                    <ul>{picture.name}</ul>
                                 
                             </div>
                         )
