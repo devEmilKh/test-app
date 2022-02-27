@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import '../index.css';
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme, GlobalStyles} from "./theme";
 import logo from '../assets/Frame227.png';
