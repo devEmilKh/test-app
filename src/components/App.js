@@ -3,7 +3,7 @@ import '../index.css';
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme, GlobalStyles} from "./theme";
 import logo from '../assets/Frame227.png';
-import Data from './Data';
+import Pagination from './Pagination';
 import VectorFD from '../assets/VectorFD.png';
 import VectorFL from '../assets/VectorFL.png';
 
@@ -26,7 +26,7 @@ return (
             <img className="button" onClick = { switchTheme } src = {changeButton} alt="button" />
           </div>
           <div>
-              <Data />
+              <Pagination />
           </div>
     </ThemeProvider>
   );
