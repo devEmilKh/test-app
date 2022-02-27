@@ -1,11 +1,12 @@
 import "./Pagination.css";
 
-import ReactPaginate from "react-paginate";
+import Paginate from "react-paginate";
 import { useEffect, useState } from "react";
 
-function App() {
+function Pagination() {
+    
   const baseUrl = 'https://test-front.framework.team';
-  
+
   const [items, setItems] = useState([]);
 
   const [pageCount, setpageCount] = useState(0);
@@ -13,7 +14,7 @@ function App() {
   let limit = 9;
 
   useEffect(() => {
-    const getComments = async () => {
+    const getItem = async () => {
       const res = await fetch(
         `https://test-front.framework.team/paintings?_page=1&_limit=${limit}`
       );
@@ -24,7 +25,7 @@ function App() {
       setItems(data);
     };
 
-    getComments();
+    getItem();
   }, [limit]);
 
   const fetchComments = async (currentPage) => {
@@ -40,11 +41,9 @@ function App() {
 
     let currentPage = data.selected + 1;
 
-    const commentsFormServer = await fetchComments(currentPage);
+    const itemFormServer = await fetchComments(currentPage);
 
-    setItems(commentsFormServer);
-    // scroll to the top
-    //window.scrollTo(0, 0)
+    setItems(itemFormServer);
   };
   return (
     <div className="container">
@@ -55,7 +54,7 @@ function App() {
               <div className="card shadow-sm w-100" style={{ minHeight: 225 }}>
                 <div className="card-body">
                   <h5 className="card-title text-center h2">Id :{item.id} </h5>
-                  <img width="360px" height="275px" src = {baseUrl + item.imageUrl} />
+                  <img width="360px" height="275px" src = {baseUrl + item.imageUrl} alt="item" />
                   <p className="card-text">{item.name}</p>
                 </div>
               </div>
@@ -64,7 +63,7 @@ function App() {
         })}
       </div>
 
-      <ReactPaginate
+      <Paginate
         previousLabel={"previous"}
         nextLabel={"next"}
         breakLabel={"..."}
@@ -87,4 +86,4 @@ function App() {
   );
 }
 
-export default App;
+export default Pagination;

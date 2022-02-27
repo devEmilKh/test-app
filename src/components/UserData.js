@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 function UserData(props) {
 
     const { gallery } = props
@@ -12,7 +11,7 @@ function UserData(props) {
                         gallery.map((picture) =>
                             <div key={picture.id}>
                                 
-                                    <img width="360px" height="275px" src = {baseUrl + picture.imageUrl} />
+                                    <img width="360px" height="275px" src = {baseUrl + picture.imageUrl} alt="item"/>
                                     <ul>{picture.name}</ul>
                                 
                             </div>
