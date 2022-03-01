@@ -1,5 +1,3 @@
-import "./Pagination.css";
-
 import Paginate from "react-paginate";
 import { useEffect, useState } from "react";
 
@@ -21,7 +19,6 @@ function Pagination() {
       const data = await res.json();
       const total = res.headers.get("x-total-count");
       setpageCount(Math.ceil(total / limit));
-      // console.log(Math.ceil(total/12));
       setItems(data);
     };
 
@@ -47,23 +44,18 @@ function Pagination() {
   };
   return (
     <div className="container">
-      <div className="row m-2">
         {items.map((item) => {
           return (
-            <div key={item.id} className="col-sm-6 col-md-4 v my-2">
-              <div className="card shadow-sm w-100" style={{ minHeight: 225 }}>
-                <div className="card-body">
+            <div key={item.id} >
                   <h5 className="card-title text-center h2">Id :{item.id} </h5>
                   <img width="360px" height="275px" src = {baseUrl + item.imageUrl} alt="item" />
                   <p className="card-text">{item.name}</p>
-                </div>
-              </div>
             </div>
           );
         })}
-      </div>
+      
 
-      <Paginate
+      <Paginate 
         previousLabel={"previous"}
         nextLabel={"next"}
         breakLabel={"..."}
