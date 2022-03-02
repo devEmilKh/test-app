@@ -3,7 +3,7 @@ function LoadingGalleryData(Component) {
         if (!isLoading) return <Component {...props} />
 
         else return (
-            <div>
+            <div className="text">
                 <h1>Подождите, данные загружаются!</h1>
             </div>
         )

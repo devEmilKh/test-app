@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme, GlobalStyles} from "./theme";
 import logo from '../assets/Frame227.png';
-import Pagination from './Pagination.js';
+import Data from './Data';
 import VectorFD from '../assets/VectorFD.png';
 import VectorFL from '../assets/VectorFL.png';
 
@@ -20,12 +20,12 @@ function App() {
 return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
-          <div className="Frame">
+          <div>
             <img className="logo" src={ logo } alt="logo"/>
             <img className="button" onClick = { switchTheme } src = {changeButton} alt="button" />
           </div>
           <div>
-              <Pagination />
+              <Data />
           </div>
     </ThemeProvider>
   );

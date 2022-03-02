@@ -49,13 +49,13 @@ function Pagination() {
             <div key={item.id} >
                   <h5 className="card-title">Id: {item.id} </h5>
                   <img src = {baseUrl + item.imageUrl} alt="item" />
-                  <p className="card-text">{item.name}</p>
+                  <p >{item.name}</p>
             </div>
           );
         })}
       
 
-      <Paginate 
+      <Paginate className="card-text"
         previousLabel={"previous"}
         nextLabel={"next"}
         breakLabel={"..."}
