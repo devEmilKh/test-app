@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+#root {
+	font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
+
 .text {
   text-align: center;
 }
+
 .logo {
   display: flex;
   float: left;
   width: 64px;
   height: 64px;
-  top: 35px;
+  margin-top: 1%;
   margin-left: 10%;
 }
 
@@ -17,15 +24,9 @@
   float: right;
   width: 20px;
   height: 20px;
-  top: 57px;
+  margin-top: 2%;
   margin-right: 10%;
 }
-
-#root {
-	font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  }
 
 .card {
   display: grid;
@@ -33,8 +34,9 @@
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   grid-template-rows: repeat(3, 275px);
   }
-  
+
 .card > div > img {
+    margin-top: 30%;
     width: 100%;
     height: 100%;
     object-fit: cover;
