@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme, GlobalStyles} from "./theme";
 import logo from '../assets/Frame227.png';
-import Pagination from './Pagination';
+import Pagination from './Pagination.js';
 import VectorFD from '../assets/VectorFD.png';
 import VectorFL from '../assets/VectorFL.png';
 

@@ -47,8 +47,8 @@ function Pagination() {
         {items.map((item) => {
           return (
             <div key={item.id} >
-                  <h5 className="card-title text-center h2">Id :{item.id} </h5>
-                  <img width="360px" height="275px" src = {baseUrl + item.imageUrl} alt="item" />
+                  <h5 className="card-title">Id: {item.id} </h5>
+                  <img src = {baseUrl + item.imageUrl} alt="item" />
                   <p className="card-text">{item.name}</p>
             </div>
           );
